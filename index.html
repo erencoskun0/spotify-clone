@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dolcy</title>
+  </head>
+  <body>
+    <section class="anablok">
+      <audio src=""></audio>
+      <div id="logo">
+        <img src="img/D.png" alt="" />
+        <div id="logo-text"><h1>OLCY</h1></div>
+      </div>
+      <nav id="navbar">
+        <div id="kagi"><button>Giriş Yap</button><button>Kayıt Ol</button></div>
+      </nav>
+      <div id="side-bar">
+        <ul class="navs">
+          <li class="nav kutuphane" id="kutuphane">
+            <div>
+              <div><i class="fa-solid fa-book"></i>Kütüphane</div>
+            </div>
+            <i class="fa-solid fa-angle-down listAktive"></i>
+            <!-- <i class="fa-solid fa-angle-up listAktive"></i> -->
+          </li>
+          <li class="nav">
+            <span> <i class="fa-solid fa-house"></i>Ana Sayfa</span>
+          </li>
+          <li class="nav">
+            <span><i class="fa-solid fa-magnifying-glass"></i>Ara</span>
+          </li>
+        </ul>
+      </div>
+
+      <main id="music-page">
+        <ul class="sarkiList"></ul>
+        <img src="" alt="" />
+      </main>
+      <div id="music-control">
+        <div class="music-control-left">
+          <i class="fa-solid fa-angle-up" id="detail_up"></i>
+          <img class="controle-img" src="" alt="" />
+          <span id="musicAd"></span>
+          <i class="fa-solid fa-heart"> </i>
+        </div>
+        <div class="music-control-center">
+          <div class="music-control-center-top">
+            <i class="fa-sharp fa-solid fa-shuffle bute mix"></i>
+            <div id="control">
+              <i class="fa-solid fa-backward-step previous"></i>
+              <i id="durum" class="fa-solid fa-circle-play"></i>
+              <!-- <i class="fa-solid fa-circle-pause "></i> -->
+              <i class="fa-solid fa-forward-step next"></i>
+            </div>
+            <i id="dongu" class="fa-solid fa-repeat bute"></i>
+          </div>
+          <div class="music-control-center-bottom">
+            <span id="gecen-sure">00:00</span
+            ><input id="music-bar" type="range" /><span id="toplam-sure"></span>
+          </div>
+        </div>
+        <div class="music-control-right">
+          <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+          <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+          <input id="volume-bar" type="range" />
+        </div>
+      </div>
+    </section>
+
+    <main id="detail" class="">
+      <span id="detail_down"
+        ><i class="fa-solid fa-angle-down"></i
+        ><img class="controle-img" src="" alt=""
+      /></span>
+    </main>
+    <script src="music.js"></script>
+    <script src="musicplayer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

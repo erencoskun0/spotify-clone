@@ -1,0 +1,442 @@
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #393646;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+.dongu {
+  color: yellowgreen;
+}
+#side-bar {
+  background-color: rgb(87, 86, 86);
+  width: 30rem;
+  height: calc(100vh - 250px);
+  margin: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+}
+#logo img {
+  width: 6rem;
+  height: auto;
+  margin-right: 0.7rem;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #dde6ed;
+  width: 30rem;
+  height: 10rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#logo-text {
+  font-size: 2.5rem;
+}
+
+.navs .nav {
+  padding: 1rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+#kutuphane {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+#kutuphane div {
+  display: flex;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.navs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.navs li span:hover {
+  color: #000;
+}
+#kutuphane:hover {
+  color: #000;
+}
+#navbar {
+  width: calc(100vw - 36rem);
+  background-color: rgb(87, 86, 86);
+  height: 10rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0;
+  min-width: 30rem;
+}
+nav #kagi button {
+  padding: 1rem;
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+nav #kagi button:hover {
+  color: #fff;
+  background-color: #000;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+#music-page {
+  width: calc(100vw - 360px);
+  height: calc(100vh - 250px);
+  margin: 1.5rem 0;
+  min-width: 30rem;
+}
+#music-page img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  opacity: 0.7;
+}
+#music-control {
+  width: 100vw;
+  height: 9rem;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.music-control-left {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 33%;
+  margin-left: 1rem;
+}
+.music-control-left i {
+  font-size: 2.7rem;
+  margin-left: 1rem;
+}
+.music-control-left i:first-child {
+  color: rgb(200, 255, 0);
+  font-size: 3rem;
+}
+.music-control-left img {
+  width: 10rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.music-control-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+.music-control-center-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.music-control-center-top .bute {
+  font-size: 1.7rem;
+}
+.music-control-center-top #control {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.music-control-center-top #control i {
+  margin: 0 1.6rem;
+  font-size: 2.7rem;
+}
+.music-control-center-top #control i:nth-child(2) {
+  color: white;
+  font-size: 4.3rem;
+}
+.music-control-center-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.music-control-center-bottom input[type="range"] {
+  width: 100%;
+  height: 0.6rem;
+  cursor: pointer;
+}
+.music-control-right {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem;
+}
+.music-control-right i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.music-control-right input[type="range"] {
+  width: 10rem;
+  height: 0.5rem;
+  cursor: pointer;
+}
+
+#detail {
+  height: calc(100vh - 23.4rem);
+  bottom: 9rem;
+  width: 100vw;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+#detail.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+#detail img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  object-fit: cover;
+}
+#detail i {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem 0.1rem 0.6rem;
+  left: 1rem;
+  top: 1rem;
+  opacity: 0.7;
+}
+.sarkiList {
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1rem;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+.sarkiList li {
+  font-size: 1.5rem;
+  background-color: #0f0e11;
+  margin: 3px;
+  border: 2px solid rgb(156, 155, 155);
+  border-radius: 1rem;
+  color: #fff;
+  padding: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+.sarkiList.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sarki.active {
+  background-color: white;
+  color: #000;
+}
+@media (max-width: 647px) {
+  html {
+    font-size: 8px;
+  }
+  #logo {
+    width: 100vw;
+    margin: 0.8rem 0.8rem;
+    height: auto;
+    padding: 1rem;
+  }
+  #navbar {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin: 0rem 0.8rem 0.8rem 0.8rem;
+    padding: 1rem;
+  }
+  #side-bar {
+    width: 100%;
+    height: auto;
+    margin: 0 0.8rem 0rem 0.8rem;
+  }
+  #side-bar i {
+    font-size: 1.5rem;
+  }
+  #side-bar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  li.nav {
+    display: inline-block;
+    width: 33%;
+    padding: 0;
+    font-size: 1.5rem !important;
+    margin: 0;
+  }
+  #kutuphane {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+  }
+  #kutuphane div {
+    display: flex;
+    align-items: center;
+    width: 80px;
+  }
+  #music-page {
+    width: 100%;
+    margin: 0.8rem 0.8rem 0 0.8rem;
+    height: auto;
+  }
+  #music-page img {
+    margin: 0;
+    border-radius: 2rem 2rem 0 0;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  #music-control {
+    height: auto;
+  }
+
+  .music-control-left,
+  .music-control-center,
+  .music-control-right {
+    width: 47%;
+  }
+  #detail {
+    height: calc(100vh - 10rem);
+    bottom: 0rem;
+  }
+}
+@media (max-width: 900px) {
+  #music-control {
+    z-index: 2;
+  }
+  .music-control-center {
+    width: 47%;
+  }
+  .music-control-center-top {
+    width: 100%;
+  }
+  .music-control-center-bottom {
+    width: 100%;
+  }
+  .music-control-right {
+    padding: 0 1rem 0 0;
+    width: 20%;
+  }
+  .music-control-left img {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .music-control-center {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .music-control-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  .music-control-center-bottom {
+    width: 100%;
+  }
+  .music-control-center-top {
+    width: 100%;
+  }
+  #music-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .music-control-right {
+    align-self: flex-end;
+    padding: 0.5rem;
+  }
+  .kutuphane div {
+    width: auto !important;
+  }
+  .kutuphan > div,
+  li.nav span {
+    width: 100px !important;
+  }
+  li.nav {
+    display: inline-block;
+    width: 33% !important;
+    padding: 0;
+    font-size: 2rem !important;
+  }
+  #side-bar {
+    justify-content: space-between;
+  }
+  #side-bar i {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 390px) {
+  .kutuphan > div,
+  li.nav span {
+    width: 80px !important;
+  }
+}
+@media (max-width: 350px) {
+  .kutuphan > div,
+  li.nav span {
+    width: 45px !important;
+  }
+  li.nav {
+    display: inline-block;
+    width: 33% !important;
+    padding: 0;
+    font-size: 1.5rem !important;
+    margin: 0;
+  }
+  #side-bar i {
+    font-size: 1.5rem;
+  }
+}
